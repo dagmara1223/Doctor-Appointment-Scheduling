@@ -1,0 +1,124 @@
+.review-modal {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    width: 420px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .2);
+}
+
+.review-modal h3 {
+    margin: 0;
+}
+
+.doctor-name {
+    margin-top: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+.specialization {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #888;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 80px;
+    margin: 12px 0;
+}
+
+.review-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.review-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.review-field select,
+.review-field textarea {
+    width: 100%;
+}
+
+.review-modal {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    width: 420px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.review-header h3 {
+    margin: 0;
+}
+
+.doctor-name {
+    font-weight: 600;
+    color: #333;
+    margin-top: 4px;
+}
+
+.specialization {
+    font-size: 13px;
+    color: #888;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.review-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-row label {
+    font-size: 14px;
+    color: #555;
+}
+
+.review-row select {
+    padding: 4px 6px;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.review-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background: #f1f1f1;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background: lightpink;
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 10px;
+}

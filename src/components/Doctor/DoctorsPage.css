@@ -1,0 +1,201 @@
+.availability-panel {
+    background: white;
+    max-width: 700px;
+    margin: 16px auto;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-card {
+    background: white;
+    width: 90%;
+    max-width: 700px;
+    max-height: 75vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.modal-header {
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    z-index: 1;
+}
+
+.modal-close {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+/* list wrapper */
+.manage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* pojedynczy wiersz */
+.manage-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+/* hover feedback */
+.manage-row:hover {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* info po lewej */
+.manage-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.manage-info strong {
+    font-size: 14px;
+}
+
+.manage-info span {
+    font-size: 13px;
+    color: #666;
+}
+
+.icon-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.icon-btn:hover {
+    background: #f2f2f2;
+}
+
+/* delete */
+.icon-btn.danger:hover {
+    background: #ffe3e3;
+    color: #c92a2a;
+}
+
+/* accordion header */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    margin-top: 16px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.accordion-header:hover {
+    background: #f1f3f5;
+}
+
+.accordion-header small {
+    margin-left: 6px;
+    color: #666;
+    font-weight: 400;
+}
+
+.arrow {
+    font-size: 16px;
+}
+
+/* accordion body */
+.accordion-body {
+    padding: 10px 4px 4px;
+}
+
+/* reusable list styles */
+.manage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.manage-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    transition: box-shadow 0.2s, transform 0.1s;
+}
+
+.manage-row:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+}
+
+.manage-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.manage-info span {
+    font-size: 13px;
+    color: #666;
+}
+
+/* empty state */
+.empty {
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+    padding: 12px;
+}
+
+/* delete button */
+.icon-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.icon-btn.danger:hover {
+    background: #ffe3e3;
+    color: #c92a2a;
+}

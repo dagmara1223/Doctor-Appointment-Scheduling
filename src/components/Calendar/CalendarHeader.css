@@ -1,0 +1,89 @@
+/* ====== HEADER GRID ====== */
+.calendar-header {
+    display: grid;
+    grid-template-columns:
+        60px
+        /* godziny */
+        repeat(7, 1fr);
+    /* dni */
+
+    align-items: stretch;
+    background: #ffdede;
+    border-bottom: 2px solid #f2b6c0;
+}
+
+/*strzalki*/
+.nav-btn {
+    position: absolute;
+    top: 18px;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-left {
+    left: 12px;
+}
+
+.nav-right {
+    right: 12px;
+}
+
+/* nad godzinami*/
+.time-header {
+    grid-column: 1;
+}
+
+/* day header*/
+.day-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 8px 6px;
+    padding: 8px 6px;
+
+    background: #ffecec;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* dzien*/
+.day-name {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.6;
+}
+
+/* data */
+.day-date {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* licznik*/
+.day-count {
+    margin-top: 4px;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/*dzis*/
+.day-header.today {
+    background: #7c5d65;
+    color: #fff;
+}
+
+.day-header.today .day-count {
+    background: rgba(255, 255, 255, 0.25);
+}

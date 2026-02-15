@@ -1,0 +1,255 @@
+:root {
+    --time-col-width: 60px;
+    --slot-height: 48px;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.calendar-container {
+    width: 97vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.calendar-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--time-col-width) repeat(7, 1fr);
+    background: #fadadd;
+    border-bottom: 3px solid #f2b6c6;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: var(--time-col-width) repeat(7, 1fr);
+    position: relative;
+}
+
+
+.time-column {
+    display: grid;
+    grid-template-rows: repeat(32, var(--slot-height));
+    /* 8:00–24:00 */
+    background-color: #fadadd;
+}
+
+.day-column {
+    display: grid;
+    grid-template-rows: repeat(32, var(--slot-height));
+    border-left: 1px solid #f2b6c6;
+}
+
+
+.calendar-header .day-header {
+    border-left: 1px solid #f2b6c6;
+}
+
+.day-header.today {
+    background-color: #936978;
+    font-weight: 700;
+}
+
+
+.time-slot {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    background-color: transparent;
+}
+
+.calendar-slot {
+    background-color: transparent;
+    transition: background-color 0.15s ease;
+}
+
+.time-slot,
+.calendar-slot {
+    border-bottom: 2px solid #f2b6c6;
+}
+
+.today-column {
+    background-color: #fde7ef;
+}
+
+.today-column .calendar-slot {
+    background-color: transparent;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left {
+    left: 8px;
+}
+
+.nav-right {
+    right: 8px;
+}
+
+.nav-btn:hover {
+    background: #f48fb1;
+}
+
+.time-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.time-header button {
+    border: none;
+    background: #f8bbd0;
+    color: #000;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.time-header button:hover {
+    background: #f48fb1;
+}
+
+.calendar-scroll {
+    overflow-y: scroll;
+    height: calc(13.55 * var(--slot-height));
+}
+
+.current-time-line {
+    position: absolute;
+    left: var(--time-col-width);
+    right: 0;
+
+    height: 2px;
+    background: red;
+
+    z-index: 20;
+}
+
+.today-column .calendar-slot.past {
+    background-color: #ecd9d9;
+}
+
+
+.calendar-slot:not(.past):hover {
+    background-color: #f8bbd0;
+    cursor: pointer;
+}
+
+.calendar-slot.available {
+    background-color: #b2f2bb;
+    position: relative;
+}
+
+.calendar-slot.available::after {
+    content: "Availability";
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    font-size: 10px;
+    color: #2b8a3e;
+}
+
+.time-range-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.delete-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.absent-day {
+    background-color: #ffd6d6;
+    position: relative;
+}
+
+.calendar-slot.absent {
+    background-color: #ffd6d6;
+    cursor: not-allowed;
+}
+
+.absence-remove-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calendar-slot.reserved.first {
+    background-color: #7297b8;
+}
+
+.calendar-slot.reserved.control {
+    background-color: #f289bf;
+}
+
+.calendar-slot.reserved.chronic {
+    background-color: #b5c66f;
+}
+
+.calendar-slot.reserved.prescription {
+    background-color: #e573db;
+}
+
+
+.calendar-slot .slot-label {
+    font-size: 12px;
+}
+
+.calendar-slot.reserved.past-visit {
+    background-color: #828080 !important;
+    color: white;
+    opacity: 0.7;
+}
+
+.calendar-slot.available.past-availability {
+    background-color: #e5e5e5;
+    color: #888;
+    opacity: 0.6;
+    cursor: not-allowed;
+}

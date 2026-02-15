@@ -1,0 +1,87 @@
+.patient-home {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.cta-card {
+    background: #fff0f3;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.cta-card h2 {
+    margin: 0 0 8px;
+}
+
+.upcoming-section h3 {
+    margin-bottom: 12px;
+}
+
+.visit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.visit-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.visit-card span {
+    font-size: 13px;
+    color: #666;
+}
+
+.link-btn {
+    border: none;
+    background: rgb(248, 237, 239);
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.danger-btn {
+    border: none;
+    background: none;
+    color: darkred;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.empty {
+    color: #888;
+    font-size: 14px;
+}
+
+.ban-alert {
+    background: #fdecea;
+    border: 1px solid #f5c2c0;
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    color: #7b1c1c;
+}
+
+.ban-alert strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.ban-alert p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.ban-contact {
+    margin-top: 8px;
+    font-size: 14px;
+}

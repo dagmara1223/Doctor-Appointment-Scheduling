@@ -1,0 +1,38 @@
+.absence-form {
+    padding: 16px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+}
+
+.absence-form h4 {
+    margin-bottom: 12px;
+}
+
+.absence-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.absence-row input[type="date"] {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.absence-row button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.absence-row button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+}

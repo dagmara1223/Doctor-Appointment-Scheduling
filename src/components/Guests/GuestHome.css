@@ -1,0 +1,69 @@
+.guest-home {
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(135deg,
+            #ffe4e8,
+            #ffd3dc);
+    border-radius: 18px;
+    padding: 48px 32px;
+    text-align: center;
+    margin-bottom: 48px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 32px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-primary {
+    background: #c94a6a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background: white;
+    border: 1px solid #c94a6a;
+    color: #c94a6a;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.health-cta {
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #ffe0e9, #fff5f8);
+    color: #8a2d45;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.health-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,37 @@
+.availability-form {
+    margin-top: 12px;
+}
+
+.availability-toggle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.availability-toggle button {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.availability-toggle button:hover {
+    background: #eee;
+}
+
+.availability-toggle button.active {
+    background: pink;
+    color: white;
+    border-color: rgb(214, 188, 192);
+}
+
+.availability-panel {
+    padding: 16px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+}

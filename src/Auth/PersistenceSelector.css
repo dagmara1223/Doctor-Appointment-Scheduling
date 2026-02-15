@@ -1,0 +1,49 @@
+.persistence {
+    position: relative;
+}
+
+.persistence-toggle {
+    background: #374151;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.persistence-toggle:hover {
+    background-color: #4b5563;
+}
+
+.persistence-menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    display: none;
+    min-width: 140px;
+    z-index: 999;
+}
+
+.persistence-menu button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.persistence-menu button:hover {
+    background-color: #f3f4f6;
+}
+
+.persistence:hover .persistence-menu {
+    display: block;
+}

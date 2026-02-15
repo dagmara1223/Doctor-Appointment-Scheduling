@@ -1,0 +1,129 @@
+.doctor-home {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* naglowek*/
+.doctor-home h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.doctor-home>p {
+    color: #666;
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+
+/* === AKCJE === */
+.doctor-home-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.doctor-home-actions button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* przycisk główny */
+.doctor-home-actions .primary-btn {
+    background: rgb(221, 142, 155);
+    color: white;
+}
+
+.doctor-home-actions .primary-btn:hover {
+    background: rgb(139, 68, 68);
+    transform: translateY(-1px);
+}
+
+/* przycisk pomocniczy */
+.doctor-home-actions .secondary-btn {
+    background: #f1f5f9;
+    color: #111;
+}
+
+.doctor-home-actions .secondary-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+}
+
+/* info */
+.doctor-info {
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    border-radius: 18px;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    max-width: 520px;
+}
+
+.doctor-info h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.doctor-info p {
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.doctor-reviews {
+    margin-top: 32px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.review-comment {
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.review-date {
+    color: #777;
+    font-size: 12px;
+}
+
+.doctor-reply {
+    background: #f4f8ff;
+    border-left: 4px solid pink;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 8px;
+}

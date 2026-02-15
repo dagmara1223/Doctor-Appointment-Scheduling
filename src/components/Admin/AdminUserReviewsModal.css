@@ -1,0 +1,46 @@
+.admin-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.admin-review-modal {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    width: 520px;
+    max-width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.admin-review-modal h3 {
+    margin-top: 0;
+}
+
+.review-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.review-row p {
+    margin: 6px 0 0;
+}
+
+.email {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.empty {
+    color: #888;
+    font-style: italic;
+}
