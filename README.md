@@ -16,7 +16,7 @@ Upon entering the application, patients are greeted with a **home page** that in
 <img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/122ee060-0fe2-4158-bc81-918fc9b0296e" />    
 
 - **quick health-related quiz**: <br>
-<img width="600" height="685" alt="image" src="https://github.com/user-attachments/assets/20fb9db3-48a9-4772-b64d-228656b684d1" /> <br>
+<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/20fb9db3-48a9-4772-b64d-228656b684d1" /> <br>
 The quiz helps engage users and provides a simple self-assessment of their current health condition before booking a visit. <br>
 
 ## 📅 Patient View 
@@ -46,8 +46,82 @@ Patients have access to a user-friendly interface that allows them to manage the
 - View appointment history and visit details
 
 ## 📅 Doctor View <br>
+Doctors can fully manage their schedules and patient interactions through a dedicated dashboard. <br>
 
-### HomeScreen 
+### HomeScreen  <br>
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/f434e9bb-d5a0-496d-908b-10609b680a9a" /> <br> 
+
+### My Schedule <br>
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/6b0642a9-1c41-472d-8f2a-0601290afdac" /> <br>
+
+### Schedule Management <br>
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/6466e54c-e4b4-4be7-b6d5-fdfe53d8e702" /> <br> 
+
+- Availability <br>
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/6b3948ab-db01-4168-9a14-5cb2cc3b0a30" /> <br>
+
+- Absence <br>
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/946e8014-6a7c-43ee-9ace-15176fa0dd96" /> <br>
+
+🥼 Doctors can: <br>
+- Define availability as **single (one-time)** or **recurring**    
+- Add whole day absences (Patient will be notified)    
+- Respond to patient reviews    
+- Remove a booked patient from the schedule if necessary    
+- Manage upcoming and past appointments
+
+## 📅 Admin View  
+Administrators oversee the entire system and ensure data quality and user safety. <br>
+### Admin Panel  
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/526d3151-e1b8-45da-965f-028970dbd990" /> <br>
+
+💫 Admins can: <br>
+- Add and manage doctors in the system
+- Approve newly registered doctors  
+  > A doctor does **not** gain system access until approved by an admin
+- Remove inappropriate reviews (e.g. offensive language)
+- Ban users for policy violations
+- Maintain overall system integrity
+
+## Data & Technology  
+<img width="320" height="274" alt="image" src="https://github.com/user-attachments/assets/fdd4b4ab-024b-437c-8f94-d22d64af3793" /> <br>
+
+All application data is securely stored and managed using **Firebase (Google)** services.
+### Tech stack highlights:
+- **React** – modern, responsive frontend
+- **Firebase Authentication** – secure user login and role-based access
+- **Firebase Database** – real-time data storage and synchronization
+- **Firebase Hosting / Cloud Services** – scalable and reliable backend infrastructure   <br>
+
+## 🔧 How to run    
+
+1. Clone the repository <br>
+```
+git clone https://github.com/dagmara1223/Doctor-Appointment-Scheduling.git 
+cd Doctor-Appointment-Scheduling 
+```
+2. Install dependencies <br>
+```
+npm install
+```
+3. Set up your Firebase project <br>
+- Go to Firebase Console and create a new project.
+- Enable the following services: <br>
+-- Authentication (Email/Password)<br>
+-- Firestore Database<br>
+-- (Optional) Firebase Hosting if you want to deploy <br>
+
+Obtain your Firebase configuration (API keys and identifiers) from your project settings. <br>
+4. 
+
+
+ 
+
+
+
+
+
+
 
 
 
