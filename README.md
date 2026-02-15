@@ -112,7 +112,29 @@ npm install
 -- (Optional) Firebase Hosting if you want to deploy <br>
 
 Obtain your Firebase configuration (API keys and identifiers) from your project settings. <br>
-4. 
+
+4. Inside src/ folder add **firebase.ts** file : <br>
+```
+export const firebaseConfig = {
+  apiKey: "<YOUR_API_KEY>",
+  authDomain: "<YOUR_PROJECT_ID>.firebaseapp.com",
+  projectId: "<YOUR_PROJECT_ID>",
+  storageBucket: "<YOUR_PROJECT_ID>.appspot.com",
+  messagingSenderId: "<YOUR_SENDER_ID>",
+  appId: "<YOUR_APP_ID>"
+};
+```
+<br>
+Fill in all fields with your Firebase project details. <br>
+
+**⚠️ Without this file and a working Firebase project, the app will not function.** <br>
+
+5. Start the development server <br>
+```
+npm run dev
+```
+The app will run locally using Vite.<br>
+Access it in your browser at: http://localhost:5173. 
 
 
  
